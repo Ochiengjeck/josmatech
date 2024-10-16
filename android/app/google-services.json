@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "456728615081",
+    "project_id": "josmatech",
+    "storage_bucket": "josmatech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456728615081:android:57e933329c2ff00cecb1b8",
+        "android_client_info": {
+          "package_name": "com.example.josma_tech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOCy9LHexM3Rn4xm1eO2qaggJV7iOghyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456728615081:android:1d0e236ff4b15ab3ecb1b8",
+        "android_client_info": {
+          "package_name": "josmatech.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOCy9LHexM3Rn4xm1eO2qaggJV7iOghyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
