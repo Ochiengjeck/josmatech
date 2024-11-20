@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:josma_tech/screens/authentication/login.dart';
-import 'package:josma_tech/screens/pages/chatgpt.dart';
 import 'package:josma_tech/screens/pages/maps.dart';
 import 'package:josma_tech/screens/pages/settings.dart';
 

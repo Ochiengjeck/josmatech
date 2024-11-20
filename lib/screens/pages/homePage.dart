@@ -27,16 +27,16 @@ class _HomepageState extends State<Homepage> {
   ];
 
   final List pages = [
-    Homepage(),
-    Josmatech(),
-    Cart(),
+    const Homepage(),
+    const Josmatech(),
+    const Cart(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Sidebar(),
-      appBar: CustomAppBar(),
+      drawer: const Sidebar(),
+      appBar: const CustomAppBar(),
       body: Column(
         children: [
           Padding(
@@ -51,6 +51,7 @@ class _HomepageState extends State<Homepage> {
                   scrollDirection: Axis.horizontal,
                   autoPlay: true,
                   enlargeCenterPage: true,
+                  enlargeFactor: 1,
                 ),
                 items: imagepaths.map((imagePath) {
                   return Container(
@@ -90,14 +91,14 @@ class _HomepageState extends State<Homepage> {
               ],
             ),
           ),
-          Expanded(
+          SizedBox(
+            height: 80,
             child: GridView.builder(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: icons.length,
-                crossAxisSpacing: 10.0,
-                mainAxisSpacing: 10.0,
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 1),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 1,
+                mainAxisSpacing: 60.0,
               ),
               itemCount: icons.length,
               itemBuilder: (BuildContext context, int index) {
@@ -118,6 +119,77 @@ class _HomepageState extends State<Homepage> {
                 );
               },
             ),
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width - 20,
+                  child: ListView(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 10, vertical: 10),
+                    children: [
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 100,
+                              width: 100,
+                              decoration: const BoxDecoration(
+                                color: Colors.amber,
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/images/MacBook Air 13 (2018-2019) Skins - Custom _ Body + Keyboard Surround.jpg",
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width - 160,
+                                child: const Text(
+                                  "MacBook Air 13 (2018-2019) Skins - Custom _ Body + Keyboard Surround",
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width - 160,
+                                child: const Text(
+                                  "Several solutions have been developed to address urban mobility challenges.",
+                                  overflow: TextOverflow.visible,
+                                ),
+                              ),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width - 160,
+                                child: const Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Text("Price"),
+                                    SizedBox(
+                                      width: 30,
+                                    ),
+                                    Text("Ksh.23,000"),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
