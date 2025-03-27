@@ -117,14 +117,14 @@
      }
  }
 
- /* Updated Header Styles */
+ /* Header */
  header {
      position: fixed;
      top: 0;
      left: 0;
      width: 100%;
      z-index: 1000;
-     padding: 1rem;
+     padding: 1rem 2rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -132,20 +132,16 @@
      backdrop-filter: blur(10px);
      border-bottom: var(--glass-border);
      box-shadow: var(--glass-shadow);
-     transition: all 0.3s ease;
  }
 
  .logo {
      display: flex;
      align-items: center;
      gap: 0.5rem;
-     z-index: 1002;
-     /* Ensure logo stays above mobile menu */
  }
 
  .logo img {
      height: 40px;
-     width: auto;
  }
 
  .logo h1 {
@@ -155,7 +151,6 @@
      -webkit-background-clip: text;
      background-clip: text;
      color: transparent;
-     white-space: nowrap;
  }
 
  .nav-toggle {
@@ -165,14 +160,12 @@
      color: var(--text);
      font-size: 1.5rem;
      cursor: pointer;
-     z-index: 1002;
-     padding: 0.5rem;
  }
 
  .nav-right {
      display: flex;
      align-items: center;
-     gap: 1rem;
+     gap: 1.5rem;
  }
 
  .theme-toggle {
@@ -216,121 +209,6 @@
      box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
  }
 
- /* Updated Mobile Menu Styles */
- .nav-menu {
-     display: flex;
-     transition: all 0.3s ease;
- }
-
- .nav-menu ul {
-     display: flex;
-     list-style: none;
-     gap: 1.5rem;
-     align-items: center;
- }
-
- .nav-close {
-     display: none;
-     position: absolute;
-     top: 1.5rem;
-     right: 1.5rem;
-     background: none;
-     border: none;
-     color: var(--text);
-     font-size: 1.5rem;
-     cursor: pointer;
-     z-index: 1002;
- }
-
- /* Mobile Styles */
- @media (max-width: 992px) {
-     .nav-toggle {
-         display: block;
-     }
-
-     .nav-menu {
-         position: fixed;
-         top: 0;
-         right: -100%;
-         width: 80%;
-         max-width: 400px;
-         height: 100vh;
-         background: var(--menu-bg);
-         backdrop-filter: blur(15px);
-         box-shadow: var(--glass-shadow);
-         padding: 5rem 2rem 2rem;
-         flex-direction: column;
-         justify-content: flex-start;
-         z-index: 1001;
-     }
-
-     .nav-menu.active {
-         right: 0;
-     }
-
-     .nav-menu ul {
-         flex-direction: column;
-         gap: 1.5rem;
-         align-items: flex-start;
-         width: 100%;
-     }
-
-     .nav-close {
-         display: block;
-     }
-
-     .nav-right {
-         margin-left: auto;
-     }
-
-     /* Adjust logo size on smaller screens */
-     .logo img {
-         height: 35px;
-     }
-
-     .logo h1 {
-         font-size: 1.3rem;
-     }
- }
-
- @media (max-width: 576px) {
-     .logo h1 {
-         display: none;
-         /* Hide text logo on very small screens */
-     }
-
-     .nav-right {
-         gap: 0.5rem;
-     }
-
-     .theme-toggle {
-         font-size: 1rem;
-         padding: 0.4rem;
-     }
-
-     .cta-button {
-         padding: 0.6rem 1.2rem;
-         background: var(--gradient-1);
-         color: white;
-         border: none;
-         border-radius: 30px;
-         font-weight: 600;
-         cursor: pointer;
-         box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
-         transition: transform 0.3s, box-shadow 0.3s;
-         text-decoration: none;
-         display: inline-flex;
-         align-items: center;
-         gap: 0.5rem;
-     }
-
-     .cta-button:hover {
-         transform: translateY(-2px);
-         box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
-     }
-
- }
-
  /* Navigation */
  nav ul {
      display: flex;
@@ -367,7 +245,7 @@
      transform: rotate(180deg);
  }
 
- /* Updated Mega Menu Styles */
+ /* Mega Menu */
  .mega-menu {
      position: absolute;
      top: 100%;
@@ -390,39 +268,58 @@
      z-index: 100;
  }
 
- @media (max-width: 992px) {
-     .mega-menu {
-         position: static;
-         width: 100%;
-         max-width: 100%;
-         display: none;
-         opacity: 1;
-         visibility: visible;
-         transform: none;
-         padding: 1rem;
-         margin-top: 1rem;
-         grid-template-columns: 1fr;
-     }
+ .nav-item-with-children:hover .mega-menu {
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+ }
 
-     .nav-item-with-children.active .mega-menu {
-         display: grid;
-     }
+ .mega-menu-column h3 {
+     font-size: 1.1rem;
+     margin-bottom: 1rem;
+     padding-bottom: 0.5rem;
+     border-bottom: 2px solid var(--primary);
+     color: var(--primary);
+ }
 
-     .mega-menu-featured {
-         grid-column: span 1;
-     }
+ .mega-menu-column ul {
+     display: flex;
+     flex-direction: column;
+     gap: 0.8rem;
+ }
 
-     .nav-item-with-children>a::after {
-         content: "\f107";
-         font-family: "Font Awesome 6 Free";
-         font-weight: 900;
-         transition: transform 0.3s;
-         margin-left: 0.5rem;
-     }
+ .mega-menu-column a {
+     padding: 0.3rem 0;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     font-size: 0.95rem;
+ }
 
-     .nav-item-with-children.active>a::after {
-         transform: rotate(180deg);
-     }
+ .mega-menu-column a i {
+     color: var(--primary);
+     font-size: 0.85rem;
+ }
+
+ .mega-menu-featured {
+     grid-column: span 2;
+     background: var(--gradient-2);
+     border-radius: 8px;
+     padding: 1.5rem;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .mega-menu-featured h3 {
+     color: white;
+     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+ }
+
+ .mega-menu-featured p {
+     margin: 1rem 0;
+     font-size: 0.9rem;
  }
 
  .mega-menu-featured .cta-button {

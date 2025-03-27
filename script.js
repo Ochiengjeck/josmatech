@@ -35,7 +35,7 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-// Mobile Navigation
+// Updated Mobile Navigation
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navClose = document.getElementById('nav-close');
@@ -44,26 +44,49 @@ const overlay = document.getElementById('overlay');
 navToggle.addEventListener('click', () => {
     navMenu.classList.add('active');
     overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
 });
 
 navClose.addEventListener('click', () => {
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Re-enable scrolling
 });
 
 overlay.addEventListener('click', () => {
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = '';
 });
 
-// Mega Menu
+// Updated Mega Menu for Mobile
 const navItemsWithChildren = document.querySelectorAll('.nav-item-with-children');
 
 navItemsWithChildren.forEach(item => {
-    item.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
+    const link = item.querySelector('a');
+
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) {
             e.preventDefault();
             item.classList.toggle('active');
+
+            // Close other open mega menus
+            navItemsWithChildren.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-menu a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 });
