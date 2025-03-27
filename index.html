@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JosmaTech | Innovation Across Industries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bg-animation"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://picsum.photos/id/28/200" alt="JosmaTech Logo">
+            <h1>JosmaTech</h1>
+        </div>
+
+        <button class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu">
+            <button class="nav-close" id="nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="nav-item-with-children">
+                    <a href="#sectors">Sectors</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-column">
+                            <h3>Technology</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-code"></i> Web Development</a></li>
+                                <li><a href="#"><i class="fas fa-laptop-code"></i> Software Development</a></li>
+                                <li><a href="#"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                                <li><a href="#"><i class="fas fa-users-cog"></i> IT Consultancy</a></li>
+                                <li><a href="#"><i class="fas fa-pencil-ruler"></i> Software Design</a></li>
+                                <li><a href="#"><i class="fas fa-cloud"></i> Cloud Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3>Agriculture</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-seedling"></i> Crop Production</a></li>
+                                <li><a href="#"><i class="fas fa-tractor"></i> Farm Equipment</a></li>
+                                <li><a href="#"><i class="fas fa-leaf"></i> Sustainable Farming</a></li>
+                                <li><a href="#"><i class="fas fa-flask"></i> Agricultural Research</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3>Fashion & Design</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-tshirt"></i> Clothing Line</a></li>
+                                <li><a href="#"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                                <li><a href="#"><i class="fas fa-gem"></i> Accessories</a></li>
+                                <li><a href="#"><i class="fas fa-shoe-prints"></i> Footwear</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3>Human Resources</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user-tie"></i> Recruitment</a></li>
+                                <li><a href="#"><i class="fas fa-chart-line"></i> Performance Management</a></li>
+                                <li><a href="#"><i class="fas fa-graduation-cap"></i> Training & Development</a></li>
+                                <li><a href="#"><i class="fas fa-building"></i> Corporate Culture</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3>Automotive</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-car"></i> Vehicle Sales</a></li>
+                                <li><a href="#"><i class="fas fa-tools"></i> Maintenance Services</a></li>
+                                <li><a href="#"><i class="fas fa-charging-station"></i> Electric Vehicles</a></li>
+                                <li><a href="#"><i class="fas fa-cogs"></i> Auto Parts</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3>E-commerce</h3>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i> Online Retail</a></li>
+                                <li><a href="#"><i class="fas fa-truck"></i> Logistics</a></li>
+                                <li><a href="#"><i class="fas fa-money-bill-wave"></i> Payment Solutions</a></li>
+                                <li><a href="#"><i class="fas fa-store"></i> Marketplace</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-featured">
+                            <h3>Latest Innovation</h3>
+                            <p>Discover our groundbreaking AI-powered business management system that integrates across
+                                all our sectors.</p>
+                            <a href="#" class="cta-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#innovations">Innovations</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#contact" class="cta-button">Get in Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in-up">
+                <h1>Innovating Across <span>Industries</span></h1>
+                <p>JosmaTech is a forward-thinking conglomerate with diverse business interests spanning technology,
+                    agriculture, fashion, human resources, automotive, and e-commerce sectors.</p>
+                <div class="hero-buttons">
+                    <a href="#sectors" class="cta-button">Explore Our Sectors <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="secondary-button">Contact Us <i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="20">0</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Business Sectors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Global Employees</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in-up animate-delay-200">
+                <div class="hero-image-container">
+                    <img src="https://picsum.photos/id/1/800/500" alt="JosmaTech Innovation">
+                    <div class="hero-image-overlay">
+                        <h3>Transforming Industries</h3>
+                        <p>Our innovations are reshaping the future of business across multiple sectors.</p>
+                        <a href="#innovations" class="cta-button">Discover More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sectors Overview -->
+    <section class="sectors-overview" id="sectors">
+        <div class="section-header">
+            <h2>Our Business Sectors</h2>
+            <p>JosmaTech operates across multiple industries, delivering innovative solutions and exceptional products
+                and services in each sector.</p>
+        </div>
+        <div class="sectors-grid">
+            <div class="sector-card animate-fade-in-up">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/2/600/400" alt="Technology Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>Technology</h3>
+                    <p>Our technology division offers cutting-edge solutions in web and software development,
+                        cybersecurity, IT consultancy, software design, and cloud services to businesses worldwide.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="sector-card animate-fade-in-up animate-delay-100">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/3/600/400" alt="Agriculture Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>Agriculture</h3>
+                    <p>Our agricultural division focuses on sustainable farming practices, crop production technologies,
+                        and innovative solutions to enhance agricultural productivity and sustainability.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="sector-card animate-fade-in-up animate-delay-200">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/4/600/400" alt="Fashion & Design Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>Fashion & Design</h3>
+                    <p>Our fashion and design division creates trendsetting clothing lines, accessories, and design
+                        solutions that blend aesthetics with functionality for discerning customers.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="sector-card animate-fade-in-up animate-delay-300">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/5/600/400" alt="Human Resources Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>Human Resources</h3>
+                    <p>Our HR division provides comprehensive human resource management services, including recruitment,
+                        training, performance management, and organizational development.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="sector-card animate-fade-in-up animate-delay-400">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/6/600/400" alt="Automotive Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>Automotive</h3>
+                    <p>Our automotive division encompasses vehicle sales, maintenance services, parts manufacturing, and
+                        innovative solutions for the evolving automotive industry.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="sector-card animate-fade-in-up animate-delay-500">
+                <div class="sector-card-image">
+                    <img src="https://picsum.photos/id/7/600/400" alt="E-commerce Sector">
+                </div>
+                <div class="sector-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="sector-card-content">
+                    <h3>E-commerce</h3>
+                    <p>Our e-commerce division offers online retail platforms, logistics solutions, payment processing
+                        systems, and marketplace management for businesses and consumers.</p>
+                </div>
+                <div class="sector-card-footer">
+                    <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services -->
+    <section class="key-services" id="services">
+        <div class="section-header">
+            <h2>Our Key Services</h2>
+            <p>Explore our comprehensive range of services tailored to meet the diverse needs of our clients across
+                different sectors.</p>
+        </div>
+        <div class="services-tabs">
+            <div class="tabs-nav">
+                <button class="tab-button active" data-tab="technology"><i class="fas fa-microchip"></i>
+                    Technology</button>
+                <button class="tab-button" data-tab="agriculture"><i class="fas fa-leaf"></i> Agriculture</button>
+                <button class="tab-button" data-tab="fashion"><i class="fas fa-tshirt"></i> Fashion & Design</button>
+                <button class="tab-button" data-tab="hr"><i class="fas fa-users"></i> Human Resources</button>
+                <button class="tab-button" data-tab="automotive"><i class="fas fa-car"></i> Automotive</button>
+                <button class="tab-button" data-tab="ecommerce"><i class="fas fa-shopping-cart"></i> E-commerce</button>
+            </div>
+            <div class="tab-content active" id="technology-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>We create custom, responsive websites and web applications that deliver exceptional user
+                            experiences and drive business growth.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>E-commerce Solutions</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Content Management Systems</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Our expert team develops custom software solutions that automate processes, enhance
+                            productivity, and solve complex business challenges.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom Software Solutions</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Mobile App Development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enterprise Software</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>We provide comprehensive cybersecurity services to protect your business from threats and
+                            ensure the safety of your digital assets.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Security Audits</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Threat Detection & Response</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Protection</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>IT Consultancy</h3>
+                        <p>Our consultants provide strategic guidance to help businesses leverage technology effectively
+                            and achieve their digital transformation goals.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Digital Transformation</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>IT Strategy Development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Technology Assessment</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Software Design</h3>
+                        <p>We create intuitive, user-centered software designs that enhance usability and deliver
+                            exceptional user experiences.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>UX/UI Design</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Prototyping & Wireframing</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>User Research</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Services</h3>
+                        <p>Our cloud solutions help businesses migrate to the cloud, optimize cloud infrastructure, and
+                            leverage cloud technologies for growth.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Migration</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Infrastructure Management</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>SaaS Solutions</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="agriculture-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Crop Production</h3>
+                        <p>We offer advanced crop production technologies and methods to maximize yields while ensuring
+                            sustainability and resource efficiency.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Precision Agriculture</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Crop Management Systems</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Yield Optimization</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3>Farm Equipment</h3>
+                        <p>We provide modern farming equipment and machinery to enhance agricultural efficiency and
+                            productivity for farms of all sizes.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Equipment Sales & Rental</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Maintenance & Repair</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Smart Farming Equipment</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainable Farming</h3>
+                        <p>Our sustainable farming solutions help agricultural businesses reduce environmental impact
+                            while maintaining profitability and productivity.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Organic Farming Methods</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Resource Conservation</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Eco-friendly Practices</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Agricultural Research</h3>
+                        <p>Our research initiatives focus on developing innovative agricultural technologies and
+                            practices to address current and future farming challenges.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Crop Science Research</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Agricultural Technology Development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Climate-Resilient Farming</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="fashion-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Clothing Line</h3>
+                        <p>Our fashion division creates trendsetting clothing collections that blend style, comfort, and
+                            sustainability for diverse consumer preferences.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Contemporary Fashion</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sustainable Materials</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Seasonal Collections</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Our graphic design services deliver visually compelling designs that communicate brand
+                            messages effectively and engage target audiences.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Brand Identity Design</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Print & Digital Design</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Packaging Design</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Accessories</h3>
+                        <p>We design and produce a wide range of fashion accessories that complement our clothing lines
+                            and cater to diverse style preferences.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Jewelry Collections</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Bags & Wallets</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fashion Accessories</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <h3>Footwear</h3>
+                        <p>Our footwear collections combine style, comfort, and durability to meet the diverse needs and
+                            preferences of our customers.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Casual & Formal Shoes</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Athletic Footwear</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sustainable Shoe Design</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="hr-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Recruitment</h3>
+                        <p>Our recruitment services help businesses find and hire top talent across various industries
+                            and roles, ensuring the right fit for organizational needs.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Talent Acquisition</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Executive Search</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Recruitment Process Outsourcing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Performance Management</h3>
+                        <p>We provide comprehensive performance management solutions to help organizations optimize
+                            employee performance and achieve business objectives.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance Evaluation Systems</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Goal Setting & Tracking</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance Improvement Plans</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Training & Development</h3>
+                        <p>Our training programs help businesses develop employee skills, enhance capabilities, and
+                            foster professional growth within the organization.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Skills Development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Leadership Training</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Customized Training Programs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Corporate Culture</h3>
+                        <p>We help organizations develop and nurture positive corporate cultures that enhance employee
+                            engagement, productivity, and retention.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Culture Assessment</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Employee Engagement Programs</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Organizational Development</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="automotive-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Vehicle Sales</h3>
+                        <p>We offer a wide range of vehicles to meet diverse customer needs, providing exceptional
+                            service throughout the purchasing process.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>New & Used Vehicles</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Financing Options</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Trade-In Services</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Maintenance Services</h3>
+                        <p>Our maintenance services ensure vehicles operate at optimal performance levels, extending
+                            their lifespan and enhancing safety.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Routine Maintenance</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Repair Services</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Diagnostic Services</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                        <h3>Electric Vehicles</h3>
+                        <p>We are at the forefront of electric vehicle technology, offering innovative solutions for the
+                            growing EV market.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>EV Sales</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Charging Solutions</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>EV Maintenance</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Auto Parts</h3>
+                        <p>We provide high-quality auto parts for various vehicle makes and models, ensuring reliability
+                            and performance.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>OEM & Aftermarket Parts</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance Parts</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Parts Manufacturing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="ecommerce-tab">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Online Retail</h3>
+                        <p>We offer comprehensive e-commerce solutions for businesses looking to establish or enhance
+                            their online retail presence.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>E-commerce Platforms</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Online Store Management</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Digital Marketing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Logistics</h3>
+                        <p>Our logistics solutions ensure efficient product delivery, inventory management, and supply
+                            chain optimization for e-commerce businesses.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Warehousing</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Order Fulfillment</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Shipping Solutions</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Payment Solutions</h3>
+                        <p>We provide secure, efficient payment processing systems for e-commerce businesses, enhancing
+                            customer experience and transaction security.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Payment Gateways</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fraud Prevention</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple Payment Methods</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Marketplace</h3>
+                        <p>Our marketplace solutions connect buyers and sellers, creating vibrant online communities for
+                            various product categories and services.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Marketplace Development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Seller Management</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Marketplace Analytics</span>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Showcase -->
+    <section class="innovation-showcase" id="innovations">
+        <div class="section-header">
+            <h2>Innovation Showcase</h2>
+            <p>Discover our groundbreaking innovations and cutting-edge solutions that are redefining industries and
+                setting new standards for excellence.</p>
+        </div>
+        <div class="innovation-container">
+            <div class="showcase-grid">
+                <div class="showcase-card large">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/8/800/500" alt="AI Business Management System">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>AI-Powered Business Management System</h3>
+                        <p>Our revolutionary AI-driven business management system integrates across all sectors,
+                            providing real-time insights, predictive analytics, and automated decision-making
+                            capabilities to optimize operations and drive growth.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">Artificial Intelligence</span>
+                                <span class="showcase-tag">Cross-Sector</span>
+                                <span class="showcase-tag">Analytics</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card medium">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/9/600/400" alt="Smart Agriculture Solution">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>Smart Agriculture Solution</h3>
+                        <p>Our IoT-based smart agriculture system uses sensors, drones, and AI to monitor crop health,
+                            soil conditions, and weather patterns, enabling precision farming and maximizing yields.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">Agriculture</span>
+                                <span class="showcase-tag">IoT</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card medium">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/10/600/400" alt="Blockchain Supply Chain">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>Blockchain Supply Chain</h3>
+                        <p>Our blockchain-based supply chain solution ensures transparency, traceability, and security
+                            across the entire supply chain, from production to delivery.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">Blockchain</span>
+                                <span class="showcase-tag">Supply Chain</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card small">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/11/600/400" alt="Virtual Fashion Studio">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>Virtual Fashion Studio</h3>
+                        <p>Our virtual fashion studio allows customers to try on clothing virtually, reducing returns
+                            and enhancing the online shopping experience.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">Fashion</span>
+                                <span class="showcase-tag">AR/VR</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card small">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/12/600/400" alt="HR Analytics Platform">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>HR Analytics Platform</h3>
+                        <p>Our HR analytics platform leverages AI to provide insights into employee performance,
+                            engagement, and retention, helping organizations optimize their human capital.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">HR</span>
+                                <span class="showcase-tag">Analytics</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card small">
+                    <div class="showcase-card-image">
+                        <img src="https://picsum.photos/id/13/600/400" alt="Electric Vehicle Charging Network">
+                    </div>
+                    <div class="showcase-card-content">
+                        <h3>EV Charging Network</h3>
+                        <p>Our electric vehicle charging network combines fast-charging technology with renewable energy
+                            sources to provide sustainable mobility solutions.</p>
+                        <div class="showcase-card-footer">
+                            <div>
+                                <span class="showcase-tag">Automotive</span>
+                                <span class="showcase-tag">Renewable Energy</span>
+                            </div>
+                            <a href="#" class="secondary-button">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section class="global-presence" id="global">
+        <div class="section-header">
+            <h2>Global Presence</h2>
+            <p>JosmaTech operates across multiple continents, serving clients worldwide with our diverse portfolio of
+                products and services.</p>
+        </div>
+        <div class="global-container">
+            <div class="map-container" id="global-map">
+                <div class="map-overlay">
+                    <div class="map-loading">
+                        <i class="fas fa-globe"></i>
+                        <span>Loading Global Presence Map...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location-grid">
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-name">
+                            <h3>North America</h3>
+                            <p>Headquarters</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>New York Office</strong><br>
+                                123 Tech Avenue, New York, NY 10001, USA
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>San Francisco Office</strong><br>
+                                456 Innovation Boulevard, San Francisco, CA 94105, USA
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>+1 (555) 123-4567</div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>northamerica@josmatech.com</div>
+                        </div>
+                    </div>
+                    <a href="#" class="secondary-button">Contact Office <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-name">
+                            <h3>Europe</h3>
+                            <p>Regional Office</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>London Office</strong><br>
+                                789 Business Square, London, EC1A 1BB, UK
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>Berlin Office</strong><br>
+                                101 Tech Park, Berlin, 10115, Germany
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>+44 (0) 20 7123 4567</div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>europe@josmatech.com</div>
+                        </div>
+                    </div>
+                    <a href="#" class="secondary-button">Contact Office <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-name">
+                            <h3>Asia-Pacific</h3>
+                            <p>Regional Office</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>Singapore Office</strong><br>
+                                202 Innovation Tower, Singapore, 018956
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <strong>Sydney Office</strong><br>
+                                303 Tech Hub, Sydney, NSW 2000, Australia
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>+65 6123 4567</div>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>asiapacific@josmatech.com</div>
+                        </div>
+                    </div>
+                    <a href="#" class="secondary-button">Contact Office <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies" id="case-studies">
+        <div class="section-header">
+            <h2>Case Studies</h2>
+            <p>Explore how our innovative solutions have helped businesses across various sectors overcome challenges
+                and achieve their goals.</p>
+        </div>
+        <div class="case-studies-container">
+            <div class="swiper case-studies-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/14/600/400" alt="Tech Case Study">
+                                <div class="case-study-sector">Technology</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Global Tech Firm Digital Transformation</h3>
+                                <p>We helped a global technology company modernize their legacy systems, implement cloud
+                                    infrastructure, and develop a comprehensive digital strategy, resulting in improved
+                                    efficiency and significant cost savings.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">40%</span>
+                                        <span class="case-stat-label">Cost Reduction</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">65%</span>
+                                        <span class="case-stat-label">Efficiency Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">3x</span>
+                                        <span class="case-stat-label">Faster Time-to-Market</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/15/600/400" alt="Agriculture Case Study">
+                                <div class="case-study-sector">Agriculture</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Sustainable Farming Implementation</h3>
+                                <p>We partnered with a large agricultural enterprise to implement sustainable farming
+                                    practices and smart agriculture technologies, resulting in increased yields, reduced
+                                    environmental impact, and improved resource efficiency.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">25%</span>
+                                        <span class="case-stat-label">Yield Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">30%</span>
+                                        <span class="case-stat-label">Water Usage Reduction</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">20%</span>
+                                        <span class="case-stat-label">Cost Savings</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/16/600/400" alt="Fashion Case Study">
+                                <div class="case-study-sector">Fashion & Design</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Fashion Retail Digital Transformation</h3>
+                                <p>We helped a fashion retailer develop an omnichannel strategy, implement virtual
+                                    try-on technology, and optimize their supply chain, resulting in improved customer
+                                    experience and increased sales.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">35%</span>
+                                        <span class="case-stat-label">Online Sales Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">45%</span>
+                                        <span class="case-stat-label">Return Rate Reduction</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">28%</span>
+                                        <span class="case-stat-label">Customer Satisfaction</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/17/600/400" alt="HR Case Study">
+                                <div class="case-study-sector">Human Resources</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>HR Transformation for Global Corporation</h3>
+                                <p>We implemented a comprehensive HR transformation for a global corporation, including
+                                    talent management systems, performance analytics, and employee engagement
+                                    initiatives, resulting in improved retention and productivity.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">40%</span>
+                                        <span class="case-stat-label">Turnover Reduction</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">25%</span>
+                                        <span class="case-stat-label">Productivity Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">50%</span>
+                                        <span class="case-stat-label">Faster Onboarding</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/18/600/400" alt="Automotive Case Study">
+                                <div class="case-study-sector">Automotive</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Automotive Dealership Network Optimization</h3>
+                                <p>We helped an automotive dealership network optimize their operations, implement
+                                    digital showrooms, and enhance customer service, resulting in increased sales and
+                                    improved customer satisfaction.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">30%</span>
+                                        <span class="case-stat-label">Sales Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">40%</span>
+                                        <span class="case-stat-label">Customer Satisfaction</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">35%</span>
+                                        <span class="case-stat-label">Operational Efficiency</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="https://picsum.photos/id/19/600/400" alt="E-commerce Case Study">
+                                <div class="case-study-sector">E-commerce</div>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>E-commerce Platform Transformation</h3>
+                                <p>We developed a scalable e-commerce platform for a retail company, implementing
+                                    advanced features such as AI-powered product recommendations, personalized shopping
+                                    experiences, and optimized checkout processes, resulting in increased sales and
+                                    improved customer satisfaction.</p>
+                                <div class="case-study-stats">
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">50%</span>
+                                        <span class="case-stat-label">Sales Increase</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">30%</span>
+                                        <span class="case-stat-label">Cart Conversion</span>
+                                    </div>
+                                    <div class="case-stat">
+                                        <span class="case-stat-number">45%</span>
+                                        <span class="case-stat-label">Customer Retention</span>
+                                    </div>
+                                </div>
+                                <div class="case-study-footer">
+                                    <a href="#" class="secondary-button">Read Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team & Leadership -->
+    <section class="team-leadership" id="team">
+        <div class="section-header">
+            <h2>Our Leadership Team</h2>
+            <p>Meet the visionary leaders who drive innovation and excellence across all our business sectors.</p>
+        </div>
+        <div class="team-container">
+            <div class="team-grid">
+                <div class="team-card animate-fade-in-up">
+                    <div class="team-card-image">
+                        <img src="https://picsum.photos/id/20/600/800" alt="Sarah Johnson">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Sarah Johnson</h3>
+                        <p>Chief Executive Officer</p>
+                        <div class="team-bio">
+                            With over 20 years of experience in technology and business management, Sarah leads
+                            JosmaTech
+                            with a vision for innovation and sustainable growth across all sectors.
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up animate-delay-100">
+                    <div class="team-card-image">
+                        <img src="https://picsum.photos/id/21/600/800" alt="Michael Chen">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Michael Chen</h3>
+                        <p>Chief Technology Officer</p>
+                        <div class="team-bio">
+                            A technology visionary with expertise in AI and digital transformation, Michael drives the
+                            technological innovation that powers all our business sectors.
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up animate-delay-200">
+                    <div class="team-card-image">
+                        <img src="https://picsum.photos/id/22/600/800" alt="Jessica Rodriguez">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Jessica Rodriguez</h3>
+                        <p>Chief Operations Officer</p>
+                        <div class="team-bio">
+                            Jessica's operational expertise ensures seamless integration and efficiency across our
+                            diverse business units, optimizing processes and maximizing performance.
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up animate-delay-300">
+                    <div class="team-card-image">
+                        <img src="https://picsum.photos/id/23/600/800" alt="David Okafor">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>David Okafor</h3>
+                        <p>Chief Financial Officer</p>
+                        <div class="team-bio">
+                            With a strategic financial mindset, David oversees the financial health of JosmaTech,
+                            ensuring sustainable growth and investment in innovation across all sectors.
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section class="news-updates" id="news">
+        <div class="section-header">
+            <h2>News & Updates</h2>
+            <p>Stay informed about the latest developments, innovations, and achievements across JosmaTech's diverse
+                business sectors.</p>
+        </div>
+        <div class="news-container">
+            <div class="news-grid">
+                <div class="news-card animate-fade-in-up">
+                    <div class="news-card-image">
+                        <img src="https://picsum.photos/id/24/600/400" alt="Tech Innovation Award">
+                    </div>
+                    <div class="news-card-content">
+                        <div class="news-meta">
+                            <div><i class="far fa-calendar-alt"></i> June 15, 2023</div>
+                            <div><i class="far fa-clock"></i> 5 min read</div>
+                        </div>
+                        <h3>JosmaTech Wins Prestigious Tech Innovation Award</h3>
+                        <p>Our AI-powered business management system has been recognized as the most innovative
+                            enterprise solution of the year, showcasing our leadership in cross-sector technology
+                            integration.</p>
+                        <div class="news-card-footer">
+                            <div>
+                                <span class="news-tag">Technology</span>
+                                <span class="news-tag">Awards</span>
+                            </div>
+                            <a href="#" class="secondary-button">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card animate-fade-in-up animate-delay-100">
+                    <div class="news-card-image">
+                        <img src="https://picsum.photos/id/25/600/400" alt="Sustainable Farming">
+                    </div>
+                    <div class="news-card-content">
+                        <div class="news-meta">
+                            <div><i class="far fa-calendar-alt"></i> May 28, 2023</div>
+                            <div><i class="far fa-clock"></i> 4 min read</div>
+                        </div>
+                        <h3>Launching Our Sustainable Farming Initiative</h3>
+                        <p>JosmaTech's agricultural division announces a groundbreaking sustainable farming program that
+                            combines IoT technology with eco-friendly practices to revolutionize food production.</p>
+                        <div class="news-card-footer">
+                            <div>
+                                <span class="news-tag">Agriculture</span>
+                                <span class="news-tag">Sustainability</span>
+                            </div>
+                            <a href="#" class="secondary-button">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card animate-fade-in-up animate-delay-200">
+                    <div class="news-card-image">
+                        <img src="https://picsum.photos/id/26/600/400" alt="Fashion Week">
+                    </div>
+                    <div class="news-card-content">
+                        <div class="news-meta">
+                            <div><i class="far fa-calendar-alt"></i> April 12, 2023</div>
+                            <div><i class="far fa-clock"></i> 3 min read</div>
+                        </div>
+                        <h3>JosmaTech Fashion Debuts at International Fashion Week</h3>
+                        <p>Our fashion division's new sustainable collection has been featured at the prestigious
+                            International Fashion Week, receiving critical acclaim for its innovative designs and
+                            eco-conscious materials.</p>
+                        <div class="news-card-footer">
+                            <div>
+                                <span class="news-tag">Fashion</span>
+                                <span class="news-tag">Events</span>
+                            </div>
+                            <a href="#" class="secondary-button">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Support -->
+    <section class="contact-support" id="contact">
+        <div class="section-header">
+            <h2>Contact & Support</h2>
+            <p>Get in touch with our team for inquiries, support, or partnership opportunities across any of our
+                business sectors.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-title">
+                                <h3>Headquarters</h3>
+                                <p>Our main office location</p>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-building"></i>
+                                <div>123 Tech Avenue, New York, NY 10001, USA</div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-clock"></i>
+                                <div>Monday - Friday: 9:00 AM - 6:00 PM</div>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Get Directions <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="contact-card-title">
+                                <h3>Customer Support</h3>
+                                <p>We're here to help</p>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>+1 (555) 123-4567</div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>support@josmatech.com</div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-clock"></i>
+                                <div>24/7 Support Available</div>
+                            </div>
+                        </div>
+                        <a href="#" class="secondary-button">Contact Support <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="contact-form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and our team will get back to you as soon as possible.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Business Sector</label>
+                            <select class="form-select">
+                                <option value="">Select Sector</option>
+                                <option value="technology">Technology</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="fashion">Fashion & Design</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="ecommerce">E-commerce</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label">Your Message</label>
+                            <textarea class="form-textarea" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat -->
+    <div class="live-chat-widget">
+        <div class="chat-button" id="chat-button">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <h3><i class="fas fa-headset"></i> Live Support</h3>
+                <button class="chat-close" id="chat-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message incoming">
+                    Hello! How can we help you today?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" placeholder="Type your message...">
+                <button class="chat-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://picsum.photos/id/28/200" alt="JosmaTech Logo">
+                        <h2>JosmaTech</h2>
+                    </div>
+                    <p>Innovating across industries to deliver cutting-edge solutions and exceptional products and
+                        services worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#sectors"><i class="fas fa-chevron-right"></i> Sectors</a></li>
+                        <li><a href="#innovations"><i class="fas fa-chevron-right"></i> Innovations</a></li>
+                        <li><a href="#case-studies"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Our Sectors</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Agriculture</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Fashion & Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Human Resources</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Automotive</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> E-commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on our latest innovations, products, and services.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 JosmaTech. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
